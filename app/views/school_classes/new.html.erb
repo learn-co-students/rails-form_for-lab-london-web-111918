@@ -1,0 +1,13 @@
+<h2>Create a new school class</h2>
+
+<%= form_for @school_class do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :room_number %>
+  <%= f.text_field :room_number %>
+
+  <%= f.submit %>
+
+  <%= link_to 'back', school_class_path %>
+<% end %>
